@@ -8,8 +8,8 @@
 %endif
 
 Name:           python-%{pkgname}
-Version:        5.1
-Release:        12%{?dist}
+Version:        5.3
+Release:        1%{?dist}
 Summary:        Python QR Code image generator
 
 License:        BSD
@@ -212,6 +212,9 @@ popd
 
 
 %changelog
+* Thu Nov 07 2024 Florence Blanc-Renaud <flo@redhat.com> - 5.3-1
+- Resolves: RHEL-15090 Generation of image file fails with Python 3
+
 * Wed Nov 28 2018 Tomas Orsava <torsava@redhat.com> - 5.1-12
 - Require platform-python-setuptools instead of python3-setuptools
 - Resolves: rhbz#1654457, rhbz#1654458
